@@ -1,6 +1,6 @@
 Python Craglist Ticket Scraper
 ==========================
-takes two parameters (city and event) and returns an array of events
+takes city and event name and returns an array of events
 
 Uses beautiful soup and requests, based off of Greg Reda's scraper
 (http://www.gregreda.com/2014/07/27/scraping-craigslist-for-tickets/)
