@@ -19,7 +19,6 @@ def parse_results(search_terms):
             price = "Unk"
         else:
             price = listing.find('span', 'price').get_text()
-        print(price)
         create_date = listing.find('time').get_text()
         event = listing.find('a', 'hdrlnk').get_text()
         results.append({'price': price, 'create_date': create_date, 'event': event})
@@ -28,9 +27,10 @@ def parse_results(search_terms):
 def set_city(city_name):
     global city
     city = city_name;
-
+    
+#example main method using methods
 if __name__ == '__main__':
-    #example code
+    #example
     set_city("denver")
     #uses Phish for example because Phish are always playing in Denver ;)
     results = parse_results("phish")
